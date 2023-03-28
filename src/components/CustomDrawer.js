@@ -12,17 +12,25 @@ const CustomDrawer = (props) => {
             <DrawerContentScrollView {...props}
                 contentContainerStyle={{ backgroundColor: '#4953E0' }}>
 
-                <ImageBackground source={require('../assets/images/menu-bg.jpeg')}
+                <ImageBackground source={require('../assets/images/hacker.png')}
                     style={{ padding: 30 }}>
                     <Avatar source={{
-                        uri: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        uri: "https://i.pinimg.com/originals/66/9c/68/669c68af00d49891e2f3c78c539862da.png"
                     }}
                         style={{ height: 80, width: 80, borderRadius: 40, marginBottom: 10 }} />
+
                     <View style={{ flexDirection: 'row' }}>
                         <Icon name='person-outline' size={16} color='#fff' />
                         <Text style={{ color: '#fff', fontFamily: 'Roboto-Medium', marginRight: 5 }} >  Usuario</Text>
                     </View>
-                    <Text style={{ color: '#fff', fontSize: 18, fontFamily: 'Roboto-Medium' }} >Jesús Martínez</Text>
+                        <Text style={{ color: '#fff', fontSize: 18, fontFamily: 'Roboto-Medium' }} >Castillo Ortega Daniel Rodrigo</Text>
+                    
+                    <View style={{ flexDirection: 'row' }}>
+                        <Icon name='school-outline' size={16} color='#fff' />
+                        <Text style={{ color: '#fff', fontFamily: 'Roboto-Medium', marginRight: 5 }} > Carrera</Text>
+                    </View>
+                        <Text style={{ color: '#fff', fontSize: 18, fontFamily: 'Roboto-Medium' }} >T.S.U. en Tecnologías de la Infomación, Área Desarrollo de Software Multiplataforma</Text>
+               
                 </ImageBackground>
                 <View style={{ flex: 1, backgroundColor: '#fff', paddingTop: 10 }}>
                     <DrawerItemList {...props} />

@@ -19,43 +19,43 @@ const Perfil = ({ navigation }) => {
                     paddingTop:10,
                     fontWeight: '900',
                     fontSize: 30,
-                    color: '#4953E0'
+                    color: '#000000'
                 }}>
-                    Perfil
+                    Usuario
                 </Text>
             </View>
 
             <View style={styles.userInfoSection}>
                 <View style={{ flexDirection: 'row', marginTop: 15 }}>
                     <Avatar source={{
-                        uri: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        uri: "https://i.pinimg.com/originals/66/9c/68/669c68af00d49891e2f3c78c539862da.png"
                     }} size={20}
                     />
                     <View style={{ marginLeft: 20 }}>
                         <Title style={[styles.title, {
                             marginTop: 15,
                             marginBottom: 5,
-                        }]}>Jesús Martínez</Title>
-                        <Caption style={styles.caption}>@j_mtz</Caption>
+                        }]}>Daniel Rodrigo Castillo Ortega</Title>
+                        <Caption style={styles.caption}>T.S.U. en Tecnologías de la Infomación</Caption>
                     </View>
                 </View>
             </View>
             <View style={styles.userInfoSection}>
                 <View style={styles.row}>
                     <Icon name='person-outline' size={29} color='#000000' />
-                    <Text style={{ color: "#000000", marginLeft: 20 }}>Jesús</Text>
+                    <Text style={{ color: "#000000", marginLeft: 20 }}>Daniel Rodrigo</Text>
                 </View>
                 <View style={styles.row}>
                     <Icon name='person-outline' size={29} color='#000000' />
-                    <Text style={{ color: "#000000", marginLeft: 20 }}>Martínez</Text>
+                    <Text style={{ color: "#000000", marginLeft: 20 }}>Castillo Ortega</Text>
                 </View>
                 <View style={styles.row}>
                     <Icon name='ios-call-outline' size={29} color='#000000' />
-                    <Text style={{ color: "#000000", marginLeft: 20 }}>7227060541</Text>
+                    <Text style={{ color: "#000000", marginLeft: 20 }}>+52 7292340974</Text>
                 </View>
                 <View style={styles.row}>
                     <Icon name='mail-outline' size={29} color='#000000' />
-                    <Text style={{ color: "#000000", marginLeft: 20 }}>admin1@email.com</Text>
+                    <Text style={{ color: "#000000", marginLeft: 20 }}>rodrigo.castillo10@hotmail.com</Text>
                 </View>
                 <View style={styles.row}>
                     <Icon name='lock-closed-outline' size={29} color='#000000' />
@@ -78,7 +78,7 @@ const Perfil = ({ navigation }) => {
             <View style={{ paddingHorizontal: 50 }}>
                 <TouchableOpacity onPress={() => navigation.navigate('EditarPerfil')}
                     style={{
-                        backgroundColor: '#4953E0',
+                        backgroundColor: '#349B38',
                         padding: 15,
                         borderRadius: 10,
                         marginBottom: 20

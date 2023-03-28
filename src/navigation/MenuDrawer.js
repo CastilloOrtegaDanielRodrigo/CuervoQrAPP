@@ -4,12 +4,9 @@ import Icon from "react-native-vector-icons/Ionicons";
 import CustomDrawer from "../components/CustomDrawer";
 
 import { Tabs } from "./Tabs";
-import ListaProducto from "../screens/ListaProducto";
-import ListaEmpresas from "../screens/ListaEmpresas";
-import ListaMaquina from "../screens/ListaMaquina";
-import ListaSubcategoria from "../screens/ListaSubcategoria";
-import ListaCategoria from "../screens/ListaCategoria";
-import { View, Text, ScrollView, SafeAreaView, ImageBackground, Touchable, TouchableOpacity } from "react-native";
+import UsuarioO from "../screens/UsuarioO";
+import Historial from "../screens/Historial";
+
 
 
 const Drawer = createDrawerNavigator();
@@ -23,37 +20,24 @@ export const MenuDrawer = ({ navigation}) => {
                 drawerLabelStyle: { marginLeft: -25, fontSize: 15, fontFamily: 'Roboto-Medium' }
             }}
         >
-            <Drawer.Screen name="TecnoStore" component={Tabs} options={{
+            <Drawer.Screen name="Inicio" component={Tabs} options={{
                 drawerIcon: ({ color }) => (
                     <Icon name='home-sharp' size={22} color={color} />
                 )
             }} />
-            <Drawer.Screen name="Registro Productos" component={ListaProducto} options={{
+            <Drawer.Screen name="Usuario" component={UsuarioO} options={{
                 drawerIcon: ({ color }) => (
-                    <Icon name='bar-chart' size={22} color={color} />
+                    <Icon name='person-outline' size={22} color={color} />
                 )
             }} />
-            <Drawer.Screen name="Registro Empresas" component={ListaEmpresas} options={{
+            <Drawer.Screen name="Historial" component={Historial} options={{
                 drawerIcon: ({ color }) => (
-                    <Icon name='business-sharp' size={22} color={color} />
-                )
-            }} />
-            <Drawer.Screen name="Registro Maquina" component={ListaMaquina} options={{
-                drawerIcon: ({ color }) => (
-                    <Icon name='md-print' size={22} color={color} />
-                )
-            }} />
-            <Drawer.Screen name="Registro Categoria" component={ListaCategoria} options={{
-                drawerIcon: ({ color }) => (
-                    <Icon name='md-folder-open-sharp' size={22} color={color} />
-                )
-            }} />
-            <Drawer.Screen name="Registro Subcategoria" component={ListaSubcategoria} options={{
-                drawerIcon: ({ color }) => (
-                    <Icon name='md-options' size={22} color={color} />
+                    <Icon name='person-add-outline' size={22} color={color} />
                 )
             }} />
 
+            
+           
         </Drawer.Navigator>
         
     );

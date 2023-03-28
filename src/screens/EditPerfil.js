@@ -20,7 +20,7 @@ const EditPerfil = ({ navigation }) => {
                     textAlign: 'center',
                     fontWeight: '900',
                     fontSize: 30,
-                    color: '#4953E0'
+                    color: '#000000'
                 }}>
                     Editar Perfil
                 </Text>
@@ -47,7 +47,7 @@ const EditPerfil = ({ navigation }) => {
                                     alignItems: 'center',
                                 }}>
                                 <Avatar source={{
-                                    uri: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    uri: "https://i.pinimg.com/originals/66/9c/68/669c68af00d49891e2f3c78c539862da.png"
                                 }} size={140}
                                 />
                             </View>
@@ -56,7 +56,7 @@ const EditPerfil = ({ navigation }) => {
                     </View>
                 </TouchableOpacity>
                 <Text style={{ fontSize: 30, fontWeight: 'bold', marginTop: 40 }}>
-                    Jesús Martínez
+                    Daniel Rodrigo
                 </Text>
             </View>
             <View style={{ marginTop: 20 }}>
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
         flex: 1, paddingHorizontal: 50, backgroundColor: '#fff'
     },
     commandButton: {
-        backgroundColor: '#4953E0',
+        backgroundColor: '#349B38',
         padding: 15,
         borderRadius: 10,
         marginBottom: 20,
